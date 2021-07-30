@@ -4,11 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration</title>
+<style>
+body{
+    margin: 0;
+    padding: 0;    
+}
+
+input{
+    border-radius: 20px;
+    margin: 12px;
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    border: 1px solid #999;
+}
+
+.registration{
+    width: 400px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    margin: 8% auto 0;
+    text-align: center;
+    margin-top: 3px;
+    color: rgb(219, 53, 131);
+    margin-bottom: 5px;
+}
+
+button{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    width: 45%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+}
+
+.sign-up-btn{
+    background-color: rgb(219, 53, 131);
+}
+
+/* .img{
+    width: 70px;
+    margin-top: 15px;
+    margin-left: 670px;
+} */
+    </style>
 </head>
 <body>
-    <form method="POST">
-        {{form.as_p}}    
-    </form>
+    <!-- <div class="img">
+        <img src="user icon.png">
+    </div> -->
+    <center><h1>Student Registration</h1></center>
+    <div class="registration">
+        <form method="POST">
+            {{form.as_p}}    
+        </form>
+        <button type="button" class="sign-up-btn">Sign up</button>
+    </div>   
 </body>
 </html>
