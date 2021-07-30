@@ -82,9 +82,10 @@ select{
     
     <div class="registration">
         <form method="POST">
+            {%csrf_token%}
             {{form.as_p}}    
         </form>
-        <button type="button" class="sign-up-btn">Sign up</button>
+        <button type="button" class="sign-up-btn">Submit</button>
     </div>   
 </body>
 </html>
